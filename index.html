@@ -1,11 +1,30 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"/><style>#root {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: black;
-    }</style></head><body><div id="root"></div><script src="main.9ee3a0a6.js"></script></body></html>
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: white;
+      }
+
+      #loading {
+        animation: fadeIn 1s;
+        animation-timing-function: step-end;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }</style></head><body><div id="root"><label id="loading">Loading...</label></div><script src="main.702d0f37.js"></script></body></html>
